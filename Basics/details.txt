@@ -1,0 +1,10 @@
+C220-FCH1704V065 /chassis # show detail
+Chassis:
+    Power: on
+    Serial Number: FCH1704V065
+    Product Name: UCS C220 M3S
+    PID : UCSC-C220-M3S
+    UUID: 1EC21C5E-3C79-40A2-9BCA-8984BD288BB5
+    Locator LED: off
+    Description:
+C220-FCH1704V065 /chassis # 

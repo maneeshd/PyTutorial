@@ -1,0 +1,23 @@
+show pci-adapter detail
+Slot L:
+    Vendor ID: 0x8086
+    Device ID: 0x1521
+    SubVendor ID: 0x1137
+    SubDevice ID: 0x008a
+    Firmware Version: 0x80000AA4-1.808.2
+    Product Name : Intel(R) I350 1 Gbps Network Controller
+Slot 1:
+    Vendor ID: 0x10df
+    Device ID: 0xf100
+    SubVendor ID: 0x10df
+    SubDevice ID: 0xf100
+    Firmware Version: N/A
+    Product Name : Emulex LPe 1200x 8 Gbps 2 port FC HBA
+Slot 2:
+    Vendor ID: 0x1077
+    Device ID: 0x8020
+    SubVendor ID: 0x1077
+    SubDevice ID: 0x0237
+    Firmware Version: 025009
+    Product Name : Qlogic QLE8242-CU 2 port 10GbE CNA
+C220-FCH1704V065 /chassis # 
