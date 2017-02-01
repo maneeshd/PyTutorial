@@ -45,10 +45,10 @@ improve the performance. A single threaded one would take more time.
 ```
 
 ###Source Files
-* [primes_single_thread.py] (PyTutorial/Advanced/Multi-Threading & Processing/primes_single_thread.py)
-* [primes_multi_thread.py] (PyTutorial/Advanced/Multi-Threading & Processing/primes_multi_thread.py)
-* [primes_multi_processing.py] (PyTutorial/Advanced/Multi-Threading & Processing/primes_multi_processing.py)
-* [ping_multi_thread.py] (PyTutorial/Advanced/Multi-Threading & Processing/ping_multi_thread.py)
+* [primes_single_thread.py] (https://github.com/maneeshd/PyTutorial/blob/master/Advanced/Multi-Threading%20%26%20Processing/primes_single_thread.py)
+* [primes_multi_thread.py] (https://github.com/maneeshd/PyTutorial/blob/master/Advanced/Multi-Threading%20%26%20Processing/primes_multi_thread.py)
+* [primes_multi_processing.py] (https://github.com/maneeshd/PyTutorial/blob/master/Advanced/Multi-Threading%20%26%20Processing/primes_multi_processing.py)
+* [ping_multi_thread.py] (https://github.com/maneeshd/PyTutorial/blob/master/Advanced/Multi-Threading%20%26%20Processing/ping_multi_thread.py)
 
 ##Authors
 
