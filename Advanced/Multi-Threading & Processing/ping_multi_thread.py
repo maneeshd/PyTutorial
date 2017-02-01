@@ -1,18 +1,52 @@
-import os
-import re
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
+from platform import system
+from re import search, compile, IGNORECASE
+from subprocess import getstatusoutput
+from threading import Thread
 
-received_packets = re.compile(r"(\d) received")
-status = ("no response", "alive but losses", "alive")
+
+def ping(ip, n=2):
+    """
+    Will ping the IP address.(Not websites..To ping websites remove the first if condition)
+    :param ip: IP address to be pinged as a String
+    :param n: Number of packets to send while pinging. Default is 2
+    :return: boolean True if the IP pings or boolean False is it doesn't.
+    """
+    if search("\d+\.\d+\.\d+\.\d+", ip) is None:
+        return False
+    failure_pattern = compile(".*Destination host unreachable.*|.*General Failure.*|.*Request timed out.*",
+                              IGNORECASE)
+    if system() == "Windows":
+        status, result = getstatusoutput("ping -n %s %s" % (n, ip))
+    else:
+        status, result = getstatusoutput("ping -c %s %s" % (n, ip))
+
+    if status == 1:
+        print(ip, "is not pinging")
+
+    if failure_pattern.search(result):
+        print(ip, "is not pinging")
+    else:
+        print(ip, "is pinging")
 
 
-for suffix in range(0, 255):
-    ip = "106.51.142." + str(suffix)
-    out = os.popen("ping -q -c2" + ip, "r")
-    print("...Pinging", ip)
-    while True:
-        line = out.readline()
+def main():
 
-        n_received = received_packets.findall(line)
-        if n_received:
-            print(ip, ": " + status[int(n_received[0])])
+    threads = list()
+    for suffix in range(0, 255):
+        ip = "10.242.128." + str(suffix)
+        thread = Thread(target=ping, args=(ip,))
+        threads.append(thread)
+        thread.start()
 
+    for thread in threads:
+        thread.join()
+
+
+if __name__ == '__main__':
+    from timeit import Timer
+    t = Timer(stmt='main()', setup="from ping_multi_thread import main")
+    print("\nExecution Time= %.3f" % t.timeit(number=1))
