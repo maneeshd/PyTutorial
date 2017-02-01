@@ -1,6 +1,8 @@
 """
 @author: Maneesh D
 @email: maneeshd77@gmail.com
+
+A multi-threaded ping implementation.(Pings all IP addresses in the range)
 """
 from platform import system
 from re import search, compile, IGNORECASE
@@ -36,9 +38,9 @@ def ping(ip, n=2):
 def main():
 
     threads = list()
-    for suffix in range(0, 255):
+    for suffix in range(0, 256):
         ip = "10.242.128." + str(suffix)
-        thread = Thread(target=ping, args=(ip,))
+        thread = Thread(target=ping, args=(ip, 1))
         threads.append(thread)
         thread.start()
 
