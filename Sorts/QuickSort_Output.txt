@@ -1,0 +1,15 @@
+$python3 QuickSort.py
+---------------------------------------
+QuickSort of 1 million random integers:
+---------------------------------------
+Populating unsorted datalist with 1 million random integers...Please Wait...
+
+Unsorted datalist Polulated....
+
+Sorting in progress...Please Wait...
+
+Sorting Complete...
+
+*************************************
+* Execution Time = 1197.685 Seconds *
+*************************************

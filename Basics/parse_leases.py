@@ -12,5 +12,6 @@ pattern = re.compile('lease\s(10\.126\.141\.\d+)\s*\{.*?binding\sstate\s(active)
 with open("dhcpd.leases", 'r') as f:
     for match in pattern.finditer(f.read()):
         ip_dict[match.group(1)] = match.group(3)
-print(ip_dict)
 print(len(ip_dict))
+for key in ip_dict.keys():
+    print("%s : %s" % (key, ip_dict.get(key),))

@@ -46,11 +46,16 @@ def jug_solution(l_jug, s_jug, goal):
             print(str(s_jug) + "-gallon jug emptied... =>(" + str(jug1) + ",0)")
 
 
-large_jug = int(input("Enter the size of the larger jug(gallons): "))
-small_jug = int(input("Enter the size of the smaller jug(gallons): "))
-target = int(
-    input("Enter the final amount of water to be left in the larger jug(gallons): "))
-if small_jug > large_jug or target > large_jug:
-    print("Invalid Inputs...Are you a retard?...")
-    exit(0)
-jug_solution(large_jug, small_jug, target)
+def water_jug():
+    large_jug = int(input("Enter the size of the larger jug(gallons): "))
+    small_jug = int(input("Enter the size of the smaller jug(gallons): "))
+    target = int(
+        input("Enter the final amount of water to be left in the larger jug(gallons): "))
+    if small_jug > large_jug or target > large_jug:
+        print("Invalid Inputs...Are you a retard?...")
+        exit(0)
+    jug_solution(large_jug, small_jug, target)
+
+
+if __name__ == '__main__':
+    water_jug()
