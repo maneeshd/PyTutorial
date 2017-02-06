@@ -1,4 +1,11 @@
-import math
+from pprint import pprint
 
-for num in filter(lambda x: all(x % y != 0 for y in range(2, int(math.sqrt(x)) + 1)), range(2, 500)):
-    print(num)
+
+lt = filter(lambda x: all(x % y != 0 for y in range(2, int(x ** 0.5) + 1)), range(2, 100))
+print(list(lt))
+
+l1 = ['Senor Pablo Escobar', 'Jon Snow', 'Maneesh', 'Jesse Pinkman', 'You']
+l2 = ['Plata o Plomo', 'You know nothing', 'Fuck Off cnllnn', 'Bitch!!']
+
+s = map(lambda x, y: x + ": " + y, l1, l2)
+pprint(list(s))
