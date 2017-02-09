@@ -4,7 +4,7 @@
 @created: 09-Feb-17
 
 A very simple example to understand Lock in threads. Locks are useful when a resource should be accessed by
-only on ethread at a time to prevent deadlock and race conditions.
+only one thread at a time to prevent deadlock and race conditions.
 """
 from threading import Thread, Lock
 from time import sleep, ctime, time

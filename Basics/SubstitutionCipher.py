@@ -2,8 +2,7 @@
 "  Created On: 25-Aug-2016  "
 "  Author: Maneesh D        "
 """""""""""""""""""""""""""""
-
-import time
+from time import sleep
 
 caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 lows = "abcdefghijklmnopqrstuvwxyz"
@@ -51,7 +50,9 @@ def decrypt(encrypted, key):
 
 def main():
     while True:
-        print("1.Encrypt\n2.Decrypt\n3.Exit")
+        print("1.Encrypt\n"
+              "2.Decrypt\n"
+              "3.Exit")
         choice = input("Enter your choice: ")
         if choice not in ["1", "2", "3"]:
             print()
@@ -71,7 +72,7 @@ def main():
             print()
         elif choice is "3":
             print("\nTHANK YOU :-)")
-            time.sleep(1)
+            sleep(1)
             exit(0)
 
 

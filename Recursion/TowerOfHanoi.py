@@ -1,3 +1,9 @@
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
+
+
 def tower_of_hanoi(disks, source, dest, aux):
     if disks == 1:
         print("Move disk 1 from " + source + " rod to " + dest + " rod.")

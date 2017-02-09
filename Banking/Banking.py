@@ -1,7 +1,7 @@
 """
 Author: Maneesh Divana
 Python: 3.5.2
-Python-201 VILT Course Assignment: Bank Transactions using text files.
+Python-201 VILT Course Assignment: Bank Transactions using only text files.
 Date: 8 Dec, 2016
 """
 from math import fabs, pow, e

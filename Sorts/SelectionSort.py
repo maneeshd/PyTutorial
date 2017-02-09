@@ -1,3 +1,9 @@
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
+
+
 def selection_sort(data=list()):
     n = len(data)
     if n < 2:

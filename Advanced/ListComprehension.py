@@ -1,3 +1,7 @@
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
 import math
 import random
 import time

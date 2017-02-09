@@ -1,8 +1,11 @@
-# Using 'type' to create Class
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+Using 'type' to create Class
+"""
 
 
 class Parent(object):
-
     def p_name(self):
         print("This is Parent Class")
 

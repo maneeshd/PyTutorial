@@ -4,9 +4,14 @@
 """
 
 
-def qsort(data_, first, last):
+def qsort(data_: list, first: int, last: int) -> list:
     """
-        Iterative version of quick sort
+    Iterative Version of QuickSort.
+    :rtype: list
+    :param data_: List of numbers to be sorted.
+    :param first: Index of the first element.
+    :param last: Index of the last element.
+    :return: List of the sorted numbers.
     """
     temp_stack = list()
     temp_stack.append((first, last))

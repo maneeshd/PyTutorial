@@ -1,7 +1,11 @@
-import sqlite3
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
+from sqlite3 import connect
 
 
-con = sqlite3.connect("my_first_db.sqlite")
+con = connect("my_first_db.sqlite")
 c = con.cursor()
 
 # c.execute("CREATE TABLE login(username VARCHAR, password VARCHAR, PRIMARY KEY(username))")

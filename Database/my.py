@@ -1,8 +1,12 @@
-import sqlite3
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
+from sqlite3 import connect
 
 
 def get_days_remaining(ip):
-    con = sqlite3.connect("my_first_db.sqlite")
+    con = connect("my_first_db.sqlite")
     c = con.cursor()
     c.execute("select DAYS from first where IP=?", (ip,))
     days_left = c.fetchone()[0]
@@ -11,7 +15,7 @@ def get_days_remaining(ip):
 
 
 def delete_ip_from_list(ip):
-    con = sqlite3.connect("my_first_db.sqlite")
+    con = connect("my_first_db.sqlite")
     c = con.cursor()
     c.execute("delete from first where IP=?", (ip,))
     print("IP deleted..")
@@ -27,7 +31,7 @@ def is_deletable(ip):
     else:
         print("Days Remaining: %s" % str(days))
         days -= 1
-        con = sqlite3.connect("my_first_db.sqlite")
+        con = connect("my_first_db.sqlite")
         c = con.cursor()
         c.execute("UPDATE first SET DAYS=? where IP=?", (days, ip))
         con.commit()

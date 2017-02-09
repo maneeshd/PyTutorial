@@ -1,7 +1,7 @@
-"""""""""""""""""""""""""""""
-"  Created On: 26-Sep-2016  "
-"  Author: Maneesh D        "
-"""""""""""""""""""""""""""""
+"""
+@author: Maneesh D
+@email: maneeshd77@gmail.com
+"""
 import unittest
 
 
