@@ -30,7 +30,7 @@ def main():
     my_thread_2 = Thread(target=timer, args=("Timer-2", 2, 5))
     my_thread_1.start()
     my_thread_2.start()
-    timer("MainTimer", 1.5, 5)
+    timer("MainTimer", 0.5, 5)
     print("[INFO] MainThread Exited")
 
 if __name__ == '__main__':
