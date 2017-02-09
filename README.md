@@ -1,2 +1,2 @@
-# PyTutorial                                                                           -[Koding](http://www.koding.com/)
-My Python Practice Ground and Experiments
+#PyTutorial
+###My Python Practice Ground and Experiments
