@@ -1,0 +1,24 @@
+2017-02-15 17:25:57,759 - threadLogger - INFO - Thread01 started
+2017-02-15 17:25:57,760 - threadLogger - INFO - Thread02 started
+2017-02-15 17:25:57,760 - threadLogger - INFO - MainThread started
+2017-02-15 17:25:58,760 - threadLogger - INFO - Timer1: Wed Feb 15 17:25:58 2017
+2017-02-15 17:25:58,760 - threadLogger - INFO - MainTimer: Wed Feb 15 17:25:58 2017
+2017-02-15 17:25:59,761 - threadLogger - INFO - Timer2: Wed Feb 15 17:25:59 2017
+2017-02-15 17:25:59,762 - threadLogger - INFO - MainTimer: Wed Feb 15 17:25:59 2017
+2017-02-15 17:25:59,762 - threadLogger - INFO - Timer1: Wed Feb 15 17:25:59 2017
+2017-02-15 17:26:00,766 - threadLogger - INFO - MainTimer: Wed Feb 15 17:26:00 2017
+2017-02-15 17:26:00,766 - threadLogger - INFO - Timer1: Wed Feb 15 17:26:00 2017
+2017-02-15 17:26:01,762 - threadLogger - INFO - Timer2: Wed Feb 15 17:26:01 2017
+2017-02-15 17:26:01,767 - threadLogger - INFO - MainTimer: Wed Feb 15 17:26:01 2017
+2017-02-15 17:26:01,774 - threadLogger - INFO - Timer1: Wed Feb 15 17:26:01 2017
+2017-02-15 17:26:02,768 - threadLogger - INFO - MainTimer: Wed Feb 15 17:26:02 2017
+2017-02-15 17:26:02,768 - threadLogger - ERROR - Divide by Zero Error caught
+2017-02-15 17:26:02,769 - threadLogger - WARNING - MainThread exited
+2017-02-15 17:26:02,776 - threadLogger - INFO - Timer1: Wed Feb 15 17:26:02 2017
+2017-02-15 17:26:02,776 - threadLogger - ERROR - Divide by Zero Error caught
+2017-02-15 17:26:02,777 - threadLogger - WARNING - Thread01 exited
+2017-02-15 17:26:03,762 - threadLogger - INFO - Timer2: Wed Feb 15 17:26:03 2017
+2017-02-15 17:26:05,763 - threadLogger - INFO - Timer2: Wed Feb 15 17:26:05 2017
+2017-02-15 17:26:07,764 - threadLogger - INFO - Timer2: Wed Feb 15 17:26:07 2017
+2017-02-15 17:26:07,764 - threadLogger - ERROR - Divide by Zero Error caught
+2017-02-15 17:26:07,765 - threadLogger - WARNING - Thread02 exited
