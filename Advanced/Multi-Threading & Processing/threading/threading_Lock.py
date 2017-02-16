@@ -14,7 +14,7 @@ t_lock = Lock()
 
 def timer(name, delay, repeat):
     print("[INFO] " + name + " started")
-    t_lock.acquire()            # 'with t_lock:' can be used.
+    t_lock.acquire()            # 'with p_lock:' can be used.
     print("[INFO] " + name + " has acquired the Lock...")
     while repeat > 0:
         sleep(delay)
