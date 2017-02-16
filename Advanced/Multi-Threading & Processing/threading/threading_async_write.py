@@ -28,8 +28,15 @@ def main():
     print("The program can continue while it writes it in another thread")
     print("100 + 400 = ", 100+400)  # Main thread will compute this
 
+    try:
+        print(1 / 0)
+    except ZeroDivisionError as e:
+        print("Also caught an exception in main thread while the background thread is writing...")
+        print(e)
+
     background_thread.join()
     print("Waited until thread was completed...")
+    print("Eciting the program...")
 
 if __name__ == '__main__':
     main()
