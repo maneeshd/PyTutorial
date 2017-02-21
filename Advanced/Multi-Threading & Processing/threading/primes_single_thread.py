@@ -13,8 +13,8 @@ def is_prime(num):
 
 
 def sum_primes(upto_num):
-    total = 0
-    for num in range(2, upto_num+1):
+    total = 2
+    for num in range(3, upto_num+1, 2):
         if is_prime(num):
             total += num
     return total
