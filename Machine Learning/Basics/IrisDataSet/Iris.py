@@ -3,14 +3,30 @@
 @email: maneeshd77@gmail.com
 @created: 02-Mar-17
 """
-import numpy as np
+import pandas
 
 
-arr = np.array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]], np.int32)
-print(arr.shape)
-print(arr)
-print(arr.transpose())
-print(arr.sum(axis=0))
-print(arr.reshape((5, 2)))
-print(arr.transpose())
-print(arr.sum(axis=1))
+def load_data():
+    names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+    data = pandas.read_csv('iris.data', names=names)
+    return data
+
+dataset = load_data()
+print(dataset.shape)
+print(dataset.head(20))
+print(dataset.describe())
+print(dataset.groupby('class').size())
+
+# # box and whisker plots
+# dataset.plot(kind='box', subplots=True, layout=(2, 2), sharex=False, sharey=False)
+# plt.show()
+#
+# # histograms
+# dataset.hist()
+# plt.show()
+
+# # scatter plot matrix
+# scatter_matrix(dataset)
+# plt.show()
+
+
