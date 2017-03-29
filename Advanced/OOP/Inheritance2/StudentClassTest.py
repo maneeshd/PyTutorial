@@ -2,7 +2,7 @@
 @author: Maneesh D
 @email: maneeshd77@gmail.com
 """
-from ..OOP.StudentClass import Student
+from Advanced.OOP.Inheritance2.StudentClass import Student
 
 
 stu1 = Student(name="Maneesh", age=23, branch="CSE", sex="M")
