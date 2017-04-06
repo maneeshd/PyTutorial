@@ -1,4 +1,4 @@
-#Multi-Threading vs Multi-Processing
+# Multi-Threading vs Multi-Processing
 The threading module provides only Concurreny but not Parallelism as the GIL(Global Interpreter Lock) in Python prevents more 
 than one thread to execute at a time. It allows exactly one thread to execute at a time, even if run on a multi-core processor.
 If the task is CPU bound then a multi-threaded program will run slower than a single-threaded one.
@@ -11,7 +11,7 @@ So,
 For IO bound tasks threading will help.
 For CPU bound tasks multiprocessing will help.
 
-##A Simple Example
+## A Simple Example
 
 Finding the sum of prime numbers till 2 million.  
 This a CPU bound heavy task.
@@ -36,7 +36,7 @@ This a CPU bound heavy task.
 In the above simple example, the multi-threaded one took more time than the single-threaded one because of the GIL.    
 The multi-processed one ran fastest because of the parallel running of the processes created.
 
-######A good example for multi-threading is the 'ping' operation done on a shell. When pinging a range of IPs multi-threading will
+###### A good example for multi-threading is the 'ping' operation done on a shell. When pinging a range of IPs multi-threading will
 improve the performance. A single threaded one would take more time.
 ```
   Pinging all IPs in the range 10.242.128.0 - 10.242.128.255
@@ -44,16 +44,16 @@ improve the performance. A single threaded one would take more time.
   Execution Time= 8.427 Seconds
 ```
 
-###Source Files
+### Source Files
 * [primes_single_thread.py] (primes_single_thread.py)
 * [primes_multi_thread.py] (primes_multi_thread.py)
 * [primes_multi_processing.py] (primes_multi_processing.py)
 * [ping_multi_thread.py] (ping_multi_thread.py)
 
-##Authors
+## Authors
 
 * **Maneesh D** - [maneeshd](https://github.com/maneeshd)
 
-##License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](PyTutorial/LICENSE.md) file for details
