@@ -56,4 +56,4 @@ improve the performance. A single threaded one would take more time.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](/PyTutorial/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details
