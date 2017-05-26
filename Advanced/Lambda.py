@@ -14,3 +14,4 @@ print(squared)
 
 sum_of_squares = reduce(lambda x, y: x + y,  squared)
 print(sum_of_squares)
+print(pi)
