@@ -61,5 +61,5 @@ if __name__ == '__main__':
     t = Timer(stmt="main([n-randint(-77, 78) for n in range(1000000)])", setup="from QuickSort import main\n"
                                                                                "from random import randint")
     print("\nUnsorted datalist Polulated....")
-    print("* Execution Time = %.3f Seconds      *" % t.timeit(number=1))
+    print("* Execution Time = %.3f Seconds    *" % t.timeit(number=1))
     print("***************************************")
