@@ -15,7 +15,7 @@ def timer(name, delay, repeat):
     p_lock.acquire()            # 'with p_lock:' can be used.
     print("[!] " + current_process().name + " has acquired the Lock...")
     while repeat > 0:
-        sleep(delay)
+        # sleep(delay)
         print(name + ": " + str(ctime(time())))
         repeat -= 1
     print("[!] " + current_process().name + " is releasing the Lock...")
@@ -27,9 +27,9 @@ def main():
     process1 = Process(target=timer, args=("Timer1", 1, 5), name="Process1")
     process2 = Process(target=timer, args=("Timer2", 2, 5), name="Process2")
     process1.start()
-    process1.join()
     process2.start()
-    timer("MainTimer", 1, 5)
+    # timer("MainTimer", 1, 5)
+    process1.join()
     process2.join()
 
 
