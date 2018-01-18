@@ -140,3 +140,6 @@ fabric.properties
 
 .gitignore
 .idea/
+*.png
+*.ico
+*.jpeg
