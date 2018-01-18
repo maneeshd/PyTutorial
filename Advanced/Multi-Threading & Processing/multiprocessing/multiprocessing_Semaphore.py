@@ -7,7 +7,7 @@ from multiprocessing import Process, current_process, BoundedSemaphore
 from time import ctime, time, sleep
 
 
-sema = BoundedSemaphore(2)
+sema = BoundedSemaphore(1)
 
 
 def timer(name, delay, repeat):
