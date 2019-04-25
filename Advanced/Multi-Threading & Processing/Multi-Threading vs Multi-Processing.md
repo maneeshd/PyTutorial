@@ -16,39 +16,38 @@ For CPU bound tasks multiprocessing will help.
 Finding the sum of prime numbers till 2 million.  
 This a CPU bound heavy task.
 
-```
-  $ python3 primes_single_thread.py
-  The Sum of prime numbers till 2 million is 142913828922
-  Execution Time= 26.732 Seconds
-```
-  
-```
-  $ python3 primes_multi_thread.py 
-  The Sum of prime numbers till 2 million is 142913828922    
-  Execution Time= 44.858 Seconds  
+```bash
+$ python3 primes_single_thread.py
+The Sum of prime numbers till 2 million is 142913828922
+Execution Time= 26.732 Seconds
 ```
   
+```bash
+$ python3 primes_multi_thread.py 
+The Sum of prime numbers till 2 million is 142913828922    
+Execution Time= 44.858 Seconds  
 ```
-  $ python3 primes_multi_processing.py 
-  The Sum of prime numbers till 2 million is 142913828922   
-  Execution Time= 16.465 Seconds   
+  
+```bash
+$ python3 primes_multi_processing.py 
+The Sum of prime numbers till 2 million is 142913828922   
+Execution Time= 16.465 Seconds   
 ```
 In the above simple example, the multi-threaded one took more time than the single-threaded one because of the GIL.    
 The multi-processed one ran fastest because of the parallel running of the processes created.
 
-###### A good example for multi-threading is the 'ping' operation done on a shell. When pinging a range of IPs multi-threading will
-improve the performance. A single threaded one would take more time.
-```
-  Pinging all IPs in the range 10.242.128.0 - 10.242.128.255
-  $ python3 ping_multi_thread.py
-  Execution Time= 8.427 Seconds
+A good example for multi-threading is the 'ping' operation. When pinging a range of IPs, since this is a network bound IO operation multi-threading will improve the performance. A single threaded one would take more time.
+```bash
+Pinging all IPs in the range 10.242.128.0 - 10.242.128.255
+$ python3 ping_multi_thread.py
+Execution Time= 8.427 Seconds
 ```
 
 ### Source Files
-* [primes_single_thread.py] (primes_single_thread.py)
-* [primes_multi_thread.py] (primes_multi_thread.py)
-* [primes_multi_processing.py] (primes_multi_processing.py)
-* [ping_multi_thread.py] (ping_multi_thread.py)
+* [primes_single_thread.py](primes_single_thread.py)
+* [primes_multi_thread.py](primes_multi_thread.py)
+* [primes_multi_processing.py](primes_multi_processing.py)
+* [ping_multi_thread.py](ping_multi_thread.py)
 
 ## Authors
 
